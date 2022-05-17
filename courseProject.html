@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="courseProject.css">
+    <script src="courseProject.js"></script>
     <title>Блог</title>
 </head>
 <body>
@@ -11,6 +12,9 @@
     </div>
     <div class="MainContent">
         <h2>Записи</h2>
+        <article class="articleclass">
+
+        </article>
     </div>
     <div class="AsideContent">
         <h2>Создать запись</h2>
@@ -27,13 +31,16 @@
             <label for="content">Содержание</label>
             <textarea name="Content" id="content" cols="56" rows="20"></textarea>
 
-            <input id="createBtn" type="button" value="Создать">
+            <input id="createBtn" type="button" value="Создать" onclick="addItemOnClick()">
         </section>
         <section class="Archive">
             <h2>Архив</h2>
+            <ul class="archiveclass"></ul>
         </section>
-        
-    </div>
-    
+     </div>
+    <script>
+        window.onload = forDelete();
+        window.onload = forArchive();
+    </script>
 </body>
 </html>
